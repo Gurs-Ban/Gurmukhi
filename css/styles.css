@@ -1,0 +1,238 @@
+html * {
+    max-height:1000000px;
+    }
+    
+    body {
+    background-color: rgb(34, 34, 34);
+    font-family: "Libre Franklin","Helvetica Neue",helvetica,arial,sans-serif;
+    font-size: 100%;
+    line-height: 1.63;
+    color: rgb(217, 217, 217);
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    margin:0;
+    word-wrap: break-word;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    }
+    
+    table.sortable thead th{
+    cursor: pointer;
+    }
+    
+    .mobnav-left {
+    float:left;
+    width:50%;
+    text-align:center;
+    background-color: rgb(34, 34, 34);
+    margin-bottom:-1.6em;
+    }
+    
+    .mobnav-right {
+    float:right;
+    width:50%;
+    text-align:center;
+    background-color: rgb(34, 34, 34);
+    margin-bottom:-1.9em;
+    }
+    
+    .mobnav-links {
+    display:block;
+    height:9.5em;
+    }
+    
+    .mobnav-link {
+    font-size: 1.5rem;
+    font-weight:100;
+    line-height: 1.6;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 0.125em;
+    color: rgb(140, 139, 139);
+    }
+    
+    .mobnav-link-p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 0.125em;
+    color: rgb(245, 245, 245);
+    border-bottom-color: rgb(245, 245, 245);
+    }
+    
+    .mobnav-link-page {
+    border-bottom-color: rgb(245, 245, 245);
+    }
+    
+    .mobnav-link-item {
+    list-style-type: none;
+    
+    }
+    
+    @media screen and (min-width: 729px) {
+    .mobnav-left, .mobnav-right {
+    display:none;
+    }
+    }
+    
+    .mobnav-link:hover, .mobnav-link.active {
+    color: rgb(245, 245, 245);
+    }
+    
+    .topnav-container {
+    position: relative;
+    margin: 0 auto;
+    padding-right: 1em;
+    }
+    
+    .topnav-links-container {
+    display: block;
+    width: 100%;
+    
+    margin-bottom: 1em;
+    }
+    
+    .topnav-links {
+    list-style-type: none;
+    height:4.3em;
+    margin-top:-2.4em;
+    margin-bottom:-1.8em;
+    background-color: rgb(34, 34, 34);
+    }
+    
+    @media screen and (max-width: 728px) {
+    .topnav-links {
+    display:none;
+    }
+    }
+    
+    @media screen and (min-width: 852px) {
+    .topnav-link {
+    font-size: 1.8rem;
+    }
+    }
+    
+    @media screen and (min-width: 900px) and (max-width: 1200px) {
+    .topnav-link {
+    font-size: 1.8rem;
+    padding-right:0.3em;
+    }
+    }
+    
+    @media screen and (min-width: 1200px) {
+    .topnav-link {
+    font-size: 1.8rem;
+    padding-right:0.6em;}
+    }
+    
+    @media screen and (max-width: 852px) {
+    .topnav-link {font-size: 1.5em;}
+    }
+    
+    @media screen and (max-width: 728px) {
+    .topnav-link {
+    display:none;
+    }
+    }
+    
+    @media screen and (max-width: 728px) {
+    .topnav-links {
+    display:none;
+    }
+    }
+    
+    @media screen and (min-width: 852px) {
+    .topnav-link-p {
+    font-size: 1.8rem;
+    }
+    }
+    
+    @media screen and (min-width: 900px) and (max-width: 1200px) {
+    .topnav-link-p {
+    font-size: 1.8rem;
+    padding-right:0.3em;
+    }
+    }
+    
+    @media screen and (min-width: 1200px) {
+    .topnav-link-p {
+    font-size: 1.8rem;
+    padding-right:0.6em;}
+    }
+    
+    @media screen and (max-width: 852px) {
+    .topnav-link-p {
+    font-size: 1.5em;
+    }
+    }
+    
+    @media screen and (max-width: 728px) {
+    .topnav-link-p {
+    display:none;
+    }
+    }
+    
+    .topnav-link-p {
+    color: rgb(245, 245, 245);
+    text-decoration: none;
+    font-weight: 300;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom-color 50ms linear 0s;
+    border-bottom-color: rgb(245, 245, 245);
+    }
+    
+    .topnav-link {
+    color: rgb(140, 139, 139);
+    text-decoration: none;
+    font-weight:300;
+    border-bottom: 2px solid transparent;
+    font-weight:100;
+    }
+    
+    .topnav-link:hover, .topnav-link.active {
+    color: rgb(245, 245, 245);
+    transition: all .2s ease-in;
+    font-weight:300;
+    }
+    
+    .topnav-link-item {
+    text-align: center;
+    line-height: 2em;
+    display: inline-block;
+    margin-top: 0.5em;
+    margin-left: 1em;
+    line-height:1.6em;
+    }
+    
+    .topnav-link-eng {
+    color: rgb(140, 139, 139);
+    cursor: context-menu;
+    font-weight:100;
+    font-size:0.66em;
+    }
+    
+    .topnavpage {
+    text-align: center;
+    line-height: 2em;
+    display: inline-block;
+    margin-top: 0.5em;
+    margin-left: 1em;
+    border-bottom-color: rgb(245, 245, 245);
+    }
+    
+    @media screen and (min-width: 900px) and (max-width: 1200px) {
+    .topnav-link-eng:hover {
+    font-size:0.66em;
+    }
+    }
+    
+    @media screen and (min-width: 1200px) {
+    .topnav-link-eng:hover {
+    font-size:0.66em;
+    }
+    }
+    
+ 
