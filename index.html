@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> Learn Punjabi - Gurmukhi Script</title>
+        <title>Learn Punjabi - Gurmukhi Script</title>
         <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
@@ -11,39 +11,41 @@
             <a href="#quiz">Quiz</a>
         </div>
 
-        <h1> Learn Punjabi Characters (ਪੰਜਾਬੀ)</h1>
+        <h1>Learn Punjabi Characters (ਪੰਜਾਬੀ)</h1>
 
         <div class="section" id="quiz">
-            <h2> Practice Quiz</h2>
+            <h2>Practice Quiz</h2>
             <p>Test your knowledge of selected Punjabi characters:</p>
 
-            <div id="quiz-character" id="current-character">a</div>
-
-            <div class="options" id="options-container">
-                <button class="option" onclick="checkAnswer('kakka')">kakka</button> 
-                <button class="option" onclick="checkAnswer('kakka')">kakka</button> 
-                <button class="option" onclick="checkAnswer('kakka')">kakka</button> 
-                <button class="option" onclick="checkAnswer('kakka')">kakka</button>  
+            <div id="character-display">
+                <div id="current-character"></div>
+                <div id="input-container">
+                    <input type="text" id="user-input" autofocus placeholder="Type the romanization">
+                </div>
+                <div id="result"></div>
             </div>
 
-
-<!-- 
-            <div id="answer" style="visibility: hidden;">hi</div>
-            <div id="kana_con"><span id="kana">ヒ</span></div>
-            <div id="input"><input type="text" id="input_box" autofocus=""></div>
-            <div id="message">&nbsp;</div>
-            <ul id="tools">
-                <li id="tool_sound"><a>Play sound</a></li>
-                <li id="tool_stroke" style="visibility: visible;"><a>Stroke order</a></li>
-                 <li id="tool_mnemonic"><a>Mnemonic</a></li>
-            </ul>
-            <div id="count">1/1</div>
--->
-
+            <div id="stats">
+                <span>Correct: <span id="correct-count">0</span></span>
+                <span>Incorrect: <span id="incorrect-count">0</span></span>
+            </div>
         </div>
 
         <div class="section" id="character-selector">
             <h2>Character Selector</h2>
+            <div class="selector-grid" id="consonant-selector">
+                <h3>Consonants</h3>
+            </div>
+            <div class="selector-grid" id="vowel-selector">
+                <h3>Vowels</h3>
+            </div>
+            <div class="selector-controls">
+                <button onclick="selectAllConsonants()">Select All Consonants</button>
+                <button onclick="selectAllVowels()">Select All Vowels</button>
+                <button onclick="deselectAll()">Deselect All</button>
+                <button onclick="selectBasicConsonants()">Select Basic Consonants</button>
+                <button onclick="updateQuizWithSelected()">Start Quiz</button>
+            </div>
         </div>
 
         <div class="section" id="basics">
