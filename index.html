@@ -28,11 +28,15 @@
             <div id="stats">
                 <span>Correct: <span id="correct-count">0</span></span>
                 <span>Incorrect: <span id="incorrect-count">0</span></span>
+                <button onclick="resetStats()" class="reset-btn">Reset Counters</button>
             </div>
         </div>
 
         <div class="section" id="character-selector">
-            <h2>Character Selector</h2>
+            <div class="selector-header">
+                <h2>Character Selector</h2>
+                <button onclick="toggleOptions()" class="toggle-btn">Show/Hide Options</button>
+            </div>
             <div class="selector-grid" id="consonant-selector">
                 <h3>Consonants</h3>
             </div>
